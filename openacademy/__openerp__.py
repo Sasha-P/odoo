@@ -18,7 +18,7 @@
     # Check https://github.com/odoo/odoo/blob/master/openerp/addons/base/module/module_data.xml
     # for the full list
     'category': 'Test',
-    'version': '0.5',
+    'version': '0.6',
 
     # any module necessary for this one to work correctly
     'depends': ['base'],
@@ -28,6 +28,7 @@
         # 'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
+        'views/openacademy.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
