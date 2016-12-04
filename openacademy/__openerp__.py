@@ -11,29 +11,23 @@
                 - attendees registration
         """,
 
-    'author': "X Company",
-    'website': "http://www.yourcompany.com",
+    'author': "Open Academy Company",
+    'website': "http://www.openacademy.com",
 
-    # Categories can be used to filter modules in modules listing
-    # Check https://github.com/odoo/odoo/blob/master/openerp/addons/base/module/module_data.xml
-    # for the full list
-    'category': 'Test',
-    'version': '0.26',
+    'category': 'Open Academy',
+    'version': '0.27',
 
-    # any module necessary for this one to work correctly
     'depends': ['base'],
 
-    # always loaded
     'data': [
-        'security/security.xml',
+        'security/openacademy_security.xml',
         'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
-        'views/openacademy.xml',
-        'views/partner.xml',
+        'views/openacademy_views.xml',
+        'views/partner_views.xml',
+        'wizard/wizard_views.xml',
     ],
-    # only loaded in demonstration mode
+
     'demo': [
-        'demo/demo.xml',
+        'data/openacademy_course_demo.xml',
     ],
 }

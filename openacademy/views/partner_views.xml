@@ -2,7 +2,7 @@
 <openerp>
     <data>
         <!-- Add instructor field to existing view -->
-        <record model="ir.ui.view" id="partner_instructor_form_view">
+        <record id="partner_instructor_view_form" model="ir.ui.view">
             <field name="name">partner.instructor</field>
             <field name="model">res.partner</field>
             <field name="inherit_id" ref="base.view_partner_form"/>
@@ -18,7 +18,7 @@
             </field>
         </record>
 
-        <record model="ir.actions.act_window" id="contact_list_action">
+        <record id="contact_list_action" model="ir.actions.act_window">
             <field name="name">Contacts</field>
             <field name="res_model">res.partner</field>
             <field name="view_mode">tree,form</field>
@@ -29,7 +29,7 @@
                   parent="configuration_menu"
                   action="contact_list_action"/>
 
-        <record model="ir.actions.act_window" id="contact_cat_list_action">
+        <record id="contact_cat_list_action" model="ir.actions.act_window">
             <field name="name">Contact Tags</field>
             <field name="res_model">res.partner.category</field>
             <field name="view_mode">tree,form</field>
@@ -38,10 +38,10 @@
                   parent="configuration_menu"
                   action="contact_cat_list_action"/>
 
-        <record model="res.partner.category" id="teacher1">
+        <record id="teacher1" model="res.partner.category">
             <field name="name">Teacher / Level 1</field>
         </record>
-        <record model="res.partner.category" id="teacher2">
+        <record id="teacher2" model="res.partner.category">
             <field name="name">Teacher / Level 2</field>
         </record>
     </data>
